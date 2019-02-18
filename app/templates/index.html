@@ -8,12 +8,16 @@
         {% else %}
         <title> Welcome to the best News website </title>
         {% endif %}
+        {% extends 'base.html'%}
         {% import 'macros.html' as macro%}
     </head>
     <!-- {% import 'macros.html' as macro%} -->
     <body>
         <h1>News</h1>
          <!-- entertainment news section  -->
+         <!-- Content block -->
+        {% block content %}
+
          <h3> Entertainment News</h3>
          <ul>
                 {{ macro.displayNewsList(entertainment)}}
@@ -28,6 +32,9 @@
         <ul>
                 {{ macro.displayNewsList(sports)}}
        </ul>
+
+       
+       {% endblock%}
 
     </body>
 </html>
