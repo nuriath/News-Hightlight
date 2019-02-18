@@ -1,4 +1,4 @@
-{% import 'macros.html' as macro%}
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -6,31 +6,26 @@
         {% if title %}
         <title> {{ title }}</title>
         {% else %}
-        <title> Welcome to the best Movie Review website </title>
+        <title> Welcome to the best News website </title>
         {% endif %}
     </head>
+    {% import 'macros.html' as macro%}
     <body>
         <h1>News</h1>
          <!-- entertainment news section  -->
          <h3> Entertainment News</h3>
          <ul>
-            {% for entertainment_news in entertainment %}
-                <li>{{ entertainment_news.id}}</li>
-            {% endfor %}
+            {{ macro.displayNewsList(entertainment)}}
         </ul>
         <!-- business news --> 
         <h3> Business News </h3>
         <ul>
-           {% for business_news in Business %}
-               <li>{{ business_news.id}}</li>
-           {% endfor %}
-       </ul>
+            {{ macro.displayNewsList(business)}}
+        </ul>
        <!-- Sport News -->
        <h3>Sport News</h3>
         <ul>
-           {% for sport_news in Sport news %}
-               <li>{{ sport_news.id}}</li>
-           {% endfor %}
+            {{ macro.displayNewsList(sport)}}
        </ul>
 
     </body>
