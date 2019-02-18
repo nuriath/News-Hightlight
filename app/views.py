@@ -16,6 +16,6 @@ def index():
     business_news = get_news('business')
     sport_news = get_news('sport')
     
-    return render_template('index.html', title = title,  entertainment = entertainment_news, business =business_news, sport = sport_news)
+    return render_template('index.html', title = title,  entertainment = entertainment_news, business=business_news, sport = sport_news)
 
 
