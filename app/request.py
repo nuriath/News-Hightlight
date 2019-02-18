@@ -54,10 +54,10 @@ def process_sources(news_list):
 
         return news_sources
 
-def get_news(id):
-    get_news_details_url = base_url.format(id,api_key)
+def get_news_source(id):
+    get_news_source_details_url = base_url.format(id,api_key)
 
-    with urllib.request.urlopen(get_news_details_url) as url:
+    with urllib.request.urlopen(get_news_source_details_url) as url:
         news_details_data = url.read()
         news_details_response = json.loads(news_details_data)
 

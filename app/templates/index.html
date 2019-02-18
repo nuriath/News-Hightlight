@@ -13,28 +13,29 @@
     </head>
     <!-- {% import 'macros.html' as macro%} -->
     <body>
-        <h1>News</h1>
-         <!-- entertainment news section  -->
-         <!-- Content block -->
-        {% block content %}
+        <div class="container">
+            <h1>News</h1>
+                <!-- entertainment news section  -->
+                <!-- Content block -->
+                {% block content %}
 
-         <h3> Entertainment News</h3>
-         <ul>
-                {{ macro.displayNewsList(entertainment)}}
-        </ul>
-        <!-- business news --> 
-        <h3> Business News </h3>
-        <ul>
-                {{ macro.displayNewsList(business)}}
-        </ul>
-       <!-- Sport News -->
-       <h3>Sport News</h3>
-        <ul>
-                {{ macro.displayNewsList(sports)}}
-       </ul>
+                <h3> Entertainment News</h3>
+                <ul>
+                        {{ macro.displayNewsList(entertainment)}}
+                </ul>
+                <!-- business news --> 
+            <h3> Business News </h3>
+                <ul>
+                        {{ macro.displayNewsList(business)}}
+                </ul>
+            <!-- Sport News -->
+            <h3>Sport News</h3>
+                <ul>
+                        {{ macro.displayNewsList(sports)}}
+            </ul>
 
-       
-       {% endblock%}
 
+            {% endblock%}
+        </div>
     </body>
 </html>

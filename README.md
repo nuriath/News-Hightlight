@@ -23,3 +23,11 @@ It's an application that the busy man or woman can use to watch the news in gene
 # CONTRIBUTOR
 
 - Mwangaza Nuriath
+
+# RELATIVE LINK 
+
+- Link:
+
+# LICENCE & COPYRIGHT
+
+(C) Mwangaza Nuriath, MIT Licence 2019
