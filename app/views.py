@@ -14,8 +14,8 @@ def index():
     title = 'Home - Welcome to The best News Website Online'
     entertainment_news = get_news('entertainment')
     business_news = get_news('business')
-    sport_news = get_news('sport')
+    sport_news = get_news('sports')
     
-    return render_template('index.html', title = title,  entertainment = entertainment_news, business=business_news, sport = sport_news)
+    return render_template('index.html', title = title,  entertainment = entertainment_news, business=business_news, sports = sport_news)
 
 
