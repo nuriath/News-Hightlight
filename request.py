@@ -24,4 +24,6 @@ base_url = app.config["NEWS_API_BASE_URL"]
 
             if get_news_response['results']:
                 news_results_list = get_news_response['results']
-                news_results = process_results(news_results_list)
+                news_results = process_results(news_results_list) 
+    
+    return news_results
