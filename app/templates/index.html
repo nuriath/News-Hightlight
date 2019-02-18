@@ -18,6 +18,20 @@
                 <li>{{ entertainment_news.id}}</li>
             {% endfor %}
         </ul>
+        <!-- business news --> 
+        <h3> Business News </h3>
+        <ul>
+           {% for business_news in Business %}
+               <li>{{ business_news.id}}</li>
+           {% endfor %}
+       </ul>
+       <!-- Sport News -->
+       <h3>Sport News</h3>
+        <ul>
+           {% for sport_news in Sport news %}
+               <li>{{ sport_news.id}}</li>
+           {% endfor %}
+       </ul>
 
     </body>
 </html>
