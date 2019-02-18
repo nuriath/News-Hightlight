@@ -1,6 +1,6 @@
-class Article:
+class Articles:
     '''
-    Article class to define Article Objects
+    Articles class to define Articles Objects
     '''
 
     def __init__(self, author, title, urlToImage, publishedAt, content):
