@@ -10,7 +10,7 @@ api_key = app.config['NEWS_API_KEY']
 # Getting the news base url
 base_url = app.config["NEWS_API_BASE_URL"]
 
-    def get_news(category):
+def get_news(category):
         '''
         Function that gets the json response to our url request
         '''
@@ -26,7 +26,7 @@ base_url = app.config["NEWS_API_BASE_URL"]
                 news_sources_list = get_news_response['sources']
                 news_sources = process_sources(news_sources_list) 
     
-    def process_sources(news_list):
+def process_sources(news_list):
         '''
         Function  that processes the news result and transform them to a list of Objects
 
@@ -50,4 +50,5 @@ base_url = app.config["NEWS_API_BASE_URL"]
                 news_object = News(id,name,description,url,category,language,country)
                 news_sources.append(news_object)
 
-    return news_sources
+
+            return news_sources
