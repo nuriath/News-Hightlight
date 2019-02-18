@@ -11,6 +11,13 @@
     </head>
     <body>
         <h1>News</h1>
+         <!-- Popular movie section  -->
+         <h3> Entertainment News</h3>
+         <ul>
+            {% for entertainment_news in entertainment %}
+                <li>{{ entertainment_news.title}}</li>
+            {% endfor %}
+        </ul>
 
     </body>
 </html>
