@@ -26,7 +26,7 @@ It's an application that the busy man or woman can use to watch the news in gene
 
 ## RELATIVE LINK 
 
-- Link:
+- Link:'https://github.com/nuriath/News-Hightlight'
 
 ## LICENCE & COPYRIGHT
 
