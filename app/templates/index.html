@@ -18,23 +18,28 @@
             <!-- Content block -->
             
         {% block content %}
-
-                <h3 id="int"> Entertainment News</h3><br>
+            <div>
+                <h3 id="int"> Entertainment News</h3>
                 <ul>
                         {{macro.displaySourcesList(entertainment)}}
                 </ul>
-                <br>
+            </div>
+               
+            <div>
                 <!-- business news --> 
               <h3 id="bus"> Business News </h3>
                 <ul>
                         {{macro.displaySourcesList(business)}}
                 </ul>
-                <br>
+            </div>
+
+            <div>
             <!-- Sport News -->
             <h3 id="spo">Sport News</h3><br>
                 <ul>
-                        {{macro.displaySourcesList(sports)}}
-            </ul>
+                    {{macro.displaySourcesList(sports)}}
+                </ul>
+            </div>
 
         {% endblock%}
       
