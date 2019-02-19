@@ -1,3 +1,5 @@
+{% extends 'bootstrap/base.html'%}
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -7,12 +9,45 @@
         {% else %}
         <title> Welcome to the News website </title>
         {% endif %}
-        {% extends 'bootstrap/base.html'%}
+        
     </head>
     <body>
-     <!-- Navbar block  --> 
-        {% block navbar %}
-             {% include 'navbar.html' %}
-        {% endblock %}
+           
+            <!-- Navbar block  --> 
+            {% block navbar %}
+                {% include 'navbar.html' %}
+            {% endblock %}
+      
+        
+<!--    
+   <div class="container">
+
+    
+        <div class="row">
+            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 posterPath" style="background: url({{source.id}}) no-repeat center center">
+                <a href={{source.id}} target="blank">
+                <img src={{source.urlToImage}} alt="IMAGE LODING " height="300">
+                </a>
+                </div>
+
+                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 movie-details">
+                    <h3>{{ news.id }}</h3>
+
+                    <p> {{ news.name}}</p>
+                    <p >{{ news.description }} </p>
+                    <p>{{news.url}}</p>
+                    <p>{{news.category}} </p>
+                    <p>{{language}} </p>
+                    <p>{{country}} </p>
+
+
+                </div>
+            </div>
+
+        </div>
+        -->
+
+   
+
     </body>
 </html>

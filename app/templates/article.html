@@ -1,0 +1,28 @@
+{% extends 'base.html'%}
+<!-- Content block -->
+{% block content %}
+<div class="container">
+{%for article in articles%}
+    <!-- Poster background -->
+    <div class="row">
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 " style="background: url({{article.author}}) no-repeat center center">
+                <a href={{article.name}} target="blank">
+
+                <img src={{article.urlToImage}} alt="IMAGE LODING " height="300">
+                <p>{{article.description}}</p>
+                </a>
+        </div>
+
+        <!-- <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 articles-details">
+            <p>{{articles.id}}</p>
+            <p>{{ articles.author }}</p>
+            <p>{{ articles.title}}</p>
+            <p>{{urlToImage}}</p>
+            <p>{{content}}</p>
+
+
+        </div> -->
+    </div>
+{%endfor%}
+</div>
+{% endblock %}

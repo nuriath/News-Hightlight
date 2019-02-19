@@ -1,7 +1,8 @@
 from flask import render_template
 from app import app
-from .request import get_news,get_news_source
-from .request import get_articles
+from .request import get_source
+from .request import get_articles,get_source 
+
 # Views
 @app.route('/')
 def index():
@@ -11,32 +12,25 @@ def index():
     '''
      
     title = 'Home - Welcome to The best News Website Online'
-    entertainment_news = get_news('entertainment')
-    business_news = get_news('business')
-    sport_news = get_news('sports')
+
+    entertainment_source = get_source('entertainment')
+    business_source = get_source('business')
+    sport_source = get_source('sports')
+
+    return render_template('index.html', title = title,  entertainment = entertainment_source, business=business_source, sports = sport_source)
     
-    return render_template('index.html', title = title,  entertainment = entertainment_news, business=business_news, sports = sport_news)
+        # for articles --> 
 
 
-# @app.route('/get_news_source/<int:id>')
-# def get_news_source(id):
+@app.route('/article/<id>')
+def article(id):
 
-#     '''
-#     View news page function that returns the news details page and its data
-#     '''
-#     news = get_news_source(id)
-#     name = f'{news.name}'
+    articles= get_articles(id)
+      
 
-@app.route('/articles/<sources_id>')  
-def articles()
-  
-    author_articles = get_articles('author')
-    title_articles = get_articles('title')
-    urlToImage_articles = get_articles('urlToImage')
-    content_articles = get_articles('content')
-   
+    return render_template('article.html', articles=articles)
 
-  return render_template('news.html',title = title, sources_id = author_articles)
+
 
 
 

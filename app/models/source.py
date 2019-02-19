@@ -1,12 +1,14 @@
-class News:
+class Source:
     '''
-    News class to define News Objects
+    Source class to define Source Objects
     '''
     def __init__(self,id,name,description,url,category,language,country):
         self.id = id
         self.name =name
         self.description = description
-        self.url = 'https://abcnews.go.com'
+        self.url = url
         self.category = category
         self.language = language
         self.country = country
+        
+        # 'https://abcnews.go.com'

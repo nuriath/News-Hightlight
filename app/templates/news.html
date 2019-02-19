@@ -1,7 +1,31 @@
 {% extends 'base.html'%}
 <!-- Content block -->
+
 {% block content %}
 <div class="container">
 
-    </div>
+<!-- Poster background -->
+<div class="row">
+   <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 urlPath" style="background: url({{source.id}}) no-repeat center center">
+       <a href={{source.id}} target="blank">
+
+       <!-- <img src={{source.urlToImage}} alt="IMAGE LODING " height="300"> -->
+       </a>
+       </div>
+
+       <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 source-details">
+           <h3>{{ source.id }}</h3>
+           <p> {{source.name}}</p>
+           <p >{{source.description }} </p>
+           <p>{{source.url}}</p>
+           <p>{{source.category}} </p>
+           <p>{{source.language}} </p>
+           <p>{{source.country}} </p>
+
+
+       </div>
+   </div>
+
+</div>
+
 {% endblock %}

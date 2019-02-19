@@ -3,9 +3,10 @@ class Articles:
     Articles class to define Articles Objects
     '''
 
-    def __init__(self, author, title, urlToImage, publishedAt, content):
+    def __init__(self,author,title,description,urlToImage,content):
         self.author = author
         self.title = title
-        self.urlToImage =  "https://techcrunch.com/wp-content/uploads/2017/08/bitcoin-split-2017a.jpg?w=711",
+        self.description=description
+        self.urlToImage =  urlToImage
         self.content = content
    
