@@ -14,28 +14,30 @@
     <body>
        
             
-        <div class="container">
+       
             <!-- Content block -->
             
         {% block content %}
 
-                <h3> Entertainment News</h3>
+                <h3 id="int"> Entertainment News</h3><br>
                 <ul>
                         {{macro.displaySourcesList(entertainment)}}
                 </ul>
+                <br>
                 <!-- business news --> 
-              <h3> Business News </h3>
+              <h3 id="bus"> Business News </h3>
                 <ul>
                         {{macro.displaySourcesList(business)}}
                 </ul>
+                <br>
             <!-- Sport News -->
-            <h3>Sport News</h3>
+            <h3 id="spo">Sport News</h3><br>
                 <ul>
                         {{macro.displaySourcesList(sports)}}
             </ul>
 
         {% endblock%}
       
-        </div>
+      
     </body>
 </html>

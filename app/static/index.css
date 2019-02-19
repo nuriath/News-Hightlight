@@ -1,7 +1,24 @@
-*{
-    display:center;
-    background-color: #7C8082;
+body{
+    background-color: #C2B9AB;
+    margin-right: 20px;
+    margin-left: 20px;
+    
 }
 h3{
+    color:black;
+    text-align: center;
+    
+}
+#int{
+    font-size: 50px;
+    display: block;
+    
+}
+#bus{
+    font-size: 50px; 
+    display: block;
+}
+#spo{
+    font-size: 50px;
     display: block;
 }
